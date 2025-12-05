@@ -1,0 +1,144 @@
+import pygame
+
+pygame.init()
+        screen = pygame.display.set_mode((800, 600))
+        screen.fill((100, 149, 237))  # Cornflower Blue background color
+
+        # The initial color of the screen's top-left pixel
+        initial_color = screen.get_at((0, 0))
+        self.assertEqual((100, 149, 237, 255), initial_color)
+
+        # Modify the screen content
+        pygame.draw.line(screen, (255, 0, 0), (0, 0), (799, 599), 5)
+        update_display()
+
+        # Verify the screen updates (pixel on drawn line changes)
+        updated_color = screen.get_at((5, 5))  # Position along the red line
+        self.assertEqual((255, 0, 0, 255), updated_color)
+
+        pygame.quit()
+
+def():pygame.init()
+    font = pygame.font.Font(None, 36)
+    text = "Background Test"
+    color = (255, 255, 255)
+    background_color = (50, 50, 50)
+    result_surface = make_text
+    pygame.quit()
+    return result_surface
+
+
+    window_width = 800
+    window_height = 600
+
+pygame.display.set_mode
+
+FPS constant = 60
+
+PLAYER_STARTING_LIVES = 5
+
+PLAYER_VELOCITY = 10
+
+COIN_STARTING_VELOCITY = 10
+
+COIN_ACCELERATION = 0.5
+
+BUFFER_DISTANCE = 100
+
+print ("score = 10")
+
+player_lives = 5
+
+clock = pygame.time.Clock()
+
+green = (0, 255, 0)
+
+red = (255, 0, 0)
+
+black = (0, 0, 0)
+
+constant white = (255, 255, 255)
+
+pygame.font
+
+font = pygame.font.SysFont("Arial", 36)
+
+score_text = font.render("Score: " + str(score), True, white)
+
+title_text = font.render("Feed the Dragon", True, white)
+
+lives_text = font.render("Lives: " + str(player_lives), True, white)
+
+score_rect = score_text.get_rect(center=(400, 100))
+score_rect = 10
+lives_rect = lives_text.get_rect(topright=(800, 100))
+window_width = 10
+
+catching_sound = pygame.mixer.Sound("assets/coin_sound.wav")
+
+missing_sound = pygame.mixer.Sound("assets/miss_sound.wav")
+
+background_music = pygame.mixer.music.load("assets/ftd_background_music.wav")
+
+player_image = pygame.image.load("assets/dragon_right.png")
+
+coin_image = pygame.image.load("assets/coin.png")
+
+buffer_distance = 100
+
+running = True
+
+    screen = pygame.display.set_mode((800, 600))
+    screen.fill((100, 149, 237))  # Cornflower Blue background color
+
+
+    initial_color = screen.get_at((0, 0))
+    self.assertEqual((100, 149, 237, 255), initial_color)
+
+
+    pygame.draw.line(screen, (255, 0, 0), (0, 0), (799, 599), 5)
+    update_display()
+
+
+    updated_color = screen.get_at((5, 5))  # Position along the red line
+    self.assertEqual((255, 0, 0, 255), updated_color)
+
+    pygame.quit()
+
+
+def test_blit_function(self):
+    pygame.init()
+    screen = pygame.display.set_mode((800, 600))
+    screen.fill((100, 149, 237))  # Cornflower Blue background color
+
+
+    red_surface = pygame.Surface((50, 50))
+    red_surface.fill((255, 0, 0))
+
+
+    position = pygame.Rect(100, 100, 50, 50)
+    blit(screen, red_surface, position)
+
+
+    self.assertEqual((255, 0, 0, 255), screen.get_at((101, 101)))  # Top-left point inside the red surface
+    pygame.quit()
+
+player_image
+
+player_velocity = 10
+
+coin_position = pygame.Rect(0, 0, 50, 50)
+
+coin_velocity = 10
+
+coin_acceleration = 0.5
+
+window_width = 800
+
+buffer_distance = 100
+
+if_player_collides_with_coin(coin_position, player_position)
+
+if_coin_collides_with_buffer(coin_position, player_position)
+
+if_player_lives_drop_to_zero(player_lives) score_rect
